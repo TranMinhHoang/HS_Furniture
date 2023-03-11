@@ -1,7 +1,6 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import HeaderOnly from './layouts/HeaderOnly';
 import { publicRoutes } from './routes';
-import './grid.css';
 
 function App() {
   // console.log(HeaderOnly);

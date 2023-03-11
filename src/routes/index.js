@@ -12,6 +12,9 @@ import Kitchen from '../pages/Kitchen';
 import Decoration from '../pages/Decoration';
 import News from '../pages/News';
 import Contact from '../pages/Contact';
+import SignIn from '../pages/Signin';
+import SignUp from '../pages/SignUp';
+import Cart from '../pages/Cart';
 
 // Public routes
 const publicRoutes = [
@@ -24,6 +27,9 @@ const publicRoutes = [
   { path: config.routes.decoration, component: Decoration, layout: HeaderSidebar },
   { path: config.routes.news, component: News },
   { path: config.routes.contact, component: Contact },
+  { path: config.routes.signin, component: SignIn },
+  { path: config.routes.signup, component: SignUp },
+  { path: config.routes.cart, component: Cart },
 ];
 
 const privateRoutes = [];

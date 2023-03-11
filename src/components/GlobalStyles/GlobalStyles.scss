@@ -4,6 +4,7 @@
   --height-header: 60px;
   --main-color: #459a07;
   --sub-color: #ff9f00;
+  --black-color: #212529;
 }
 
 * {
@@ -31,4 +32,8 @@ body {
 
 .p-l-r-20 {
   padding: 0 20px;
+}
+
+.align-items-center {
+  align-items: center;
 }
