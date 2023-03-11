@@ -1,0 +1,44 @@
+.header {
+}
+
+.header-top {
+  font-size: 1.4rem;
+  width: 100%;
+  background: #f4f4f4;
+  border-bottom: 1px solid #ebebeb;
+  padding: 7px 0;
+}
+
+.header-top-left {
+  display: flex;
+}
+
+.header-top-address span {
+  margin: 0 18px 0 6px;
+}
+
+.header-top-icon {
+  color: #acacac;
+  font-size: 1.6rem;
+  align-self: center;
+}
+
+.header-top-hotline span {
+  margin-left: 6px;
+  color: var(--main-color);
+  font-weight: 700;
+}
+
+.header-top-hotline span:hover {
+  color: var(--sub-color);
+  cursor: pointer;
+}
+
+.header-top-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header-top-right span {
+  margin-right: 6px;
+}

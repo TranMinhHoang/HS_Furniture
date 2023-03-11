@@ -1,9 +1,9 @@
 @import 'normalize.css';
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap');
-
 :root {
   --height-header: 60px;
+  --main-color: #459a07;
+  --sub-color: #ff9f00;
 }
 
 * {
@@ -19,11 +19,16 @@ html {
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
-
   font-size: 1.6rem;
-
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-weight: 400;
   line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: #fff;
+}
 
-  text-rendering: optimizeSpeed;
+.p-l-r-20 {
+  padding: 0 20px;
 }
