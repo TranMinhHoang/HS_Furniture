@@ -1,5 +1,8 @@
 .header-nav {
   background-color: #000;
+  position: sticky;
+  top: 0;
+  z-index: 10000;
 }
 
 .nav-list {
@@ -65,5 +68,6 @@
     padding: 10px 20px;
     text-decoration: none;
     color: #000;
+    width: 100%;
   }
 }

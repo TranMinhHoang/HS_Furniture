@@ -1,5 +1,11 @@
+import BannerTop from './components/BannerTop';
+
 function Home() {
-  return <h1>home page</h1>;
+  return (
+    <>
+      <BannerTop />
+    </>
+  );
 }
 
 export default Home;

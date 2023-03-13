@@ -15,6 +15,8 @@ import Contact from '../pages/Contact';
 import SignIn from '../pages/Signin';
 import SignUp from '../pages/SignUp';
 import Cart from '../pages/Cart';
+import Chair from '../pages/Chair';
+import Cabinet from '../pages/Cabinet';
 
 // Public routes
 const publicRoutes = [
@@ -30,6 +32,8 @@ const publicRoutes = [
   { path: config.routes.signin, component: SignIn },
   { path: config.routes.signup, component: SignUp },
   { path: config.routes.cart, component: Cart },
+  { path: config.routes.chair, component: Chair, layout: HeaderSidebar },
+  { path: config.routes.cabinet, component: Cabinet, layout: HeaderSidebar },
 ];
 
 const privateRoutes = [];

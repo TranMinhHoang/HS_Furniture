@@ -9,8 +9,7 @@ import navigations from './navigations';
 const cx = classNames.bind(styles);
 
 function HeaderNav() {
-  const [activeLink, setActiveLink] = useState(null);
-
+  const [activeLink, setActiveLink] = useState(window.location.pathname);
   useEffect(() => {
     setActiveLink(window.location.pathname);
   }, [window.location.pathname]);

@@ -2,6 +2,7 @@ import Header from '../components/Header';
 import Sidebar from './SideBar';
 import styles from '../Layout.module.scss';
 import classNames from 'classnames/bind';
+import Footer from '../components/Footer';
 
 const cx = classNames.bind(styles);
 
@@ -13,6 +14,7 @@ function HeaderSidebar({ children }) {
         <Sidebar />
         <div className={cx('content')}>{children}</div>
       </div>
+      <Footer />
     </div>
   );
 }

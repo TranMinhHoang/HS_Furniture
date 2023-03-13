@@ -15,6 +15,8 @@ const srcRootContent = readdirSync(srcPath, { withFileTypes: true }).map((dirent
 srcRootContent.forEach((directory) => {
   absolutePathAliases[directory] = path.join(srcPath, directory);
 });
+
+console.log(absolutePathAliases);
 // https://vitejs.dev/config/
 export default defineConfig({
   root: '.',
@@ -24,5 +26,5 @@ export default defineConfig({
       ...absolutePathAliases,
     },
   },
-  plugins: [react(), jsconfigPaths()],
+  plugins: [react()],
 });
