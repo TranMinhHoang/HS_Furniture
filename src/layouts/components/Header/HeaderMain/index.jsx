@@ -1,11 +1,11 @@
 import { faCartShopping, faMagnifyingGlass, faUser } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import styles from './Header.module.scss';
+import styles from './HeaderMain.module.scss';
 import { Link } from 'react-router-dom';
 import images from 'assets/images';
 import Tippy from '@tippyjs/react/headless';
 import classNames from 'classnames/bind';
-import ButtonPrimary from '../../../components/ButtonPrimary';
+import ButtonPrimary from '../../../../components/ButtonPrimary';
 
 const cx = classNames.bind(styles);
 
@@ -60,7 +60,7 @@ function HeaderMain() {
             </div>
 
             <Tippy
-              delay={[0, 500]}
+              delay={[0, 400]}
               interactive={true}
               placement="bottom-end"
               render={(attrs) => (

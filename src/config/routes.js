@@ -11,6 +11,8 @@ const routes = {
   signin: '/signin',
   signup: '/signup',
   cart: '/cart',
+  chair: '/chair',
+  cabinet: '/cabinet',
 };
 
 export default routes;

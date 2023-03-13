@@ -2,14 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
 import GlobalStyles from './components/GlobalStyles';
-import GridStyles from './components/GridStyles';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <GridStyles>
-      <GlobalStyles>
-        <App />
-      </GlobalStyles>
-    </GridStyles>
+    <GlobalStyles>
+      <App />
+    </GlobalStyles>
   </React.StrictMode>,
 );

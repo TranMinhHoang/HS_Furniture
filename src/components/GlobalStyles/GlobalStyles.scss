@@ -6,6 +6,8 @@
   --sub-color: #ff9f00;
   --black-color: #212529;
   --light-color-text: #acacac;
+  --box-shadow: rgb(0 0 0 / 12%) 0px 2px 12px;
+  --background-color-hover-list-item: #ebebeb;
 }
 
 * {
@@ -21,7 +23,7 @@ html {
 }
 
 body {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
     'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   font-weight: 400;

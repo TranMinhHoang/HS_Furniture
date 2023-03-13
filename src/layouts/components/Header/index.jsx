@@ -1,16 +1,10 @@
-import {
-  faCartShopping,
-  faHeadphones,
-  faHouseChimney,
-  faMagnifyingGlass,
-  faTruck,
-  faUser,
-} from '@fortawesome/free-solid-svg-icons';
+import { faHeadphones, faHouseChimney, faTruck } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import classNames from 'classnames/bind';
 import styles from './Header.module.scss';
 import HeaderMain from './HeaderMain';
+import HeaderNav from './HeaderNav';
 
 const cx = classNames.bind(styles);
 
@@ -38,8 +32,7 @@ function Header() {
         </div>
       </div>
       <HeaderMain />
-
-      <div className={cx('header-nav')}></div>
+      <HeaderNav />
     </div>
   );
 }
