@@ -1,10 +1,12 @@
-import BannerTop from './components/BannerTop';
+import SliderTop from './components/SliderTop';
+import Privacy from './components/Privacy';
 
 function Home() {
   return (
-    <>
-      <BannerTop />
-    </>
+    <div className="section-home">
+      <SliderTop />
+      <Privacy />
+    </div>
   );
 }
 

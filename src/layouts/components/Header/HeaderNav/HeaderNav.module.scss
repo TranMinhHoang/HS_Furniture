@@ -2,7 +2,7 @@
   background-color: #000;
   position: sticky;
   top: 0;
-  z-index: 10000;
+  z-index: 2;
 }
 
 .nav-list {
@@ -50,11 +50,12 @@
   z-index: 1;
   box-shadow: var(--box-shadow);
   list-style: none;
+  background-color: #fff;
 }
 
 .nav-child-item {
   &:hover {
-    background-color: var(--background-color-hover-list-item);
+    background-color: var(--light-grey-color);
     cursor: pointer;
 
     .nav-child-item-link {
