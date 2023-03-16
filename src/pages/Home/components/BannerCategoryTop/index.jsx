@@ -21,7 +21,6 @@ const listCategory = [
 ];
 
 function BannerCategoryTop() {
-  console.log(images);
   return (
     <div className={cx('banner-category-top', 'p-t-b-30')}>
       <div className="grid wide">

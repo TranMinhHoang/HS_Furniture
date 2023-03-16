@@ -1,0 +1,42 @@
+.new-products {
+}
+
+.header {
+  width: 100%;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: '';
+    bottom: -4px;
+    right: 0;
+    left: 0;
+    height: 2px;
+    background-color: var(--light-grey-color);
+  }
+}
+
+.heading {
+  font-size: 1.7rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: #000;
+  display: inline-block;
+  position: relative;
+
+  &:hover {
+    color: var(--main-color);
+    cursor: pointer;
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    bottom: -4px;
+    right: 0;
+    left: 0;
+    height: 2px;
+    background-color: var(--main-color);
+    z-index: 1;
+  }
+}
