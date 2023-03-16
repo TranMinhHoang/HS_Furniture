@@ -242,7 +242,9 @@
 }
 
 .header-view-cart-btn {
+  border-radius: 6px;
+
   &:hover {
-    background-color: #5aba14;
+    background-color: #5aba14 !important;
   }
 }

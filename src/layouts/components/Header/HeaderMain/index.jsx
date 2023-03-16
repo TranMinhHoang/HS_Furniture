@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import images from 'assets/images';
 import Tippy from '@tippyjs/react/headless';
 import classNames from 'classnames/bind';
-import ButtonPrimary from '../../../../components/ButtonPrimary';
+import Button from '../../../../components/Button';
 
 const cx = classNames.bind(styles);
 
@@ -106,7 +106,9 @@ function HeaderMain() {
                     </ul>
                     <div className={cx('header-cart-foot')}>
                       <Link to="/cart" className={cx('header-view-cart')}>
-                        <ButtonPrimary className={cx('header-view-cart-btn')}>Xem giỏ hàng</ButtonPrimary>
+                        <Button primary className={cx('header-view-cart-btn')}>
+                          Xem giỏ hàng
+                        </Button>
                       </Link>
                     </div>
                   </div>

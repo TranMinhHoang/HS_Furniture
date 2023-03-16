@@ -17,7 +17,7 @@ function HeaderNav() {
   return (
     <div className={cx('header-nav')}>
       <div className={cx('grid wide')}>
-        <nav>
+        <nav className="p-l-r-20">
           <ul className={cx('nav-list')}>
             {navigations.map((item, index) => (
               <li key={index} className={cx('nav-item', activeLink === item.path && 'nav-item-active')}>
