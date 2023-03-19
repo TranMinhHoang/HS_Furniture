@@ -4,15 +4,11 @@ import styles from './SliderTop.module.scss';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper.min.css';
 import 'styles/pagination.min.css';
-// import 'styles/navigation.min.css';
-
-// import Swiper core and required modules
 import SwiperCore, { Keyboard, Pagination, Navigation, Autoplay } from 'swiper/core';
 import { useRef } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCaretLeft, faCaretRight, faCircle } from '@fortawesome/free-solid-svg-icons';
+import { faCaretLeft, faCaretRight } from '@fortawesome/free-solid-svg-icons';
 
-// install Swiper modules
 SwiperCore.use([Autoplay, Keyboard, Pagination, Navigation]);
 
 const cx = classNames.bind(styles);
@@ -27,7 +23,6 @@ function SliderTop() {
         <Swiper
           className={cx('slider-wrapper')}
           slidesPerView={1}
-          direction={'horizontal'}
           loop={true}
           spaceBetween={3}
           autoHeight={true}

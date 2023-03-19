@@ -6,7 +6,7 @@ const cx = classNames.bind(styles);
 
 function ProductType({ title, type }) {
   return (
-    <div className={cx('new-products', 'py-[30px]')}>
+    <div className="py-[30px]">
       <div className="grid wide">
         <div className={cx('header', 'row', 'no-gutters', 'px-[20px]')}>
           <div className={cx('header-container', 'c-12')}>

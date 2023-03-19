@@ -1,16 +1,17 @@
 import SliderTop from './components/SliderTop';
 import Privacy from './components/Privacy';
-import BannerCategoryTop from './components/BannerCategoryTop';
+import CategoryTop from './components/CategoryTop';
 import ProductType from './components/ProductType';
 import images from '../../assets/images';
 import Banner from './components/Banner';
+import CategoryBottom from './components/CategoryBottom';
 
 function Home() {
   return (
     <div className="section-home">
       <SliderTop />
       <Privacy />
-      <BannerCategoryTop />
+      <CategoryTop />
       <ProductType title="Sản phẩm mới" type="new" />
       <div className="banner-intro-top py-[30px]">
         <div className="grid wide">
@@ -27,6 +28,7 @@ function Home() {
           </div>
         </div>
       </div>
+      <CategoryBottom />
     </div>
   );
 }

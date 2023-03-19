@@ -1,5 +1,5 @@
 import classNames from 'classnames/bind';
-import styles from './BannerCategoryTop.module.scss';
+import styles from './CategoryTop.module.scss';
 import images from '../../../../assets/images';
 import Button from '../../../../components/Button';
 
@@ -20,7 +20,7 @@ const listCategory = [
   },
 ];
 
-function BannerCategoryTop() {
+function CategoryTop() {
   return (
     <div className={cx('banner-category-top', 'p-t-b-30')}>
       <div className="grid wide">
@@ -42,4 +42,4 @@ function BannerCategoryTop() {
   );
 }
 
-export default BannerCategoryTop;
+export default CategoryTop;

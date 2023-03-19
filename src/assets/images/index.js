@@ -4,6 +4,7 @@ import sliderTop from './sliderTop';
 import privacy from './privacy';
 import categoryTop from './categoryTop';
 import banner from './banner';
+import categoryBottom from './categoryBottom';
 
 const images = {
   logo,
@@ -12,6 +13,7 @@ const images = {
   privacy,
   categoryTop,
   banner,
+  categoryBottom,
 };
 
 export default images;

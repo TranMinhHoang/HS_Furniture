@@ -24,7 +24,7 @@ function ListProduct({ type }) {
             <div className={cx('product-item-img')} style={{ backgroundImage: `url(${product?.images?.[0]})` }}></div>
             <div className={cx('product-item-info')}>
               <p className={cx('prodcut-item-name')}>{product.name}</p>
-              {product.sale.isSale ? (
+              {product.discount !== 0 ? (
                 <>
                   <div className={cx('product-item-price')}>
                     <span className={cx('product-item-price-old')}>
@@ -32,12 +32,12 @@ function ListProduct({ type }) {
                       <span className={cx('product-item-price-unit')}>đ</span>
                     </span>
                     <span className={cx('product-item-price-curr')}>
-                      {(product.price - product.price * product.sale.discount).toLocaleString('de-DE')}
+                      {(product.price - product.price * product.discount).toLocaleString('de-DE')}
                       <span className={cx('product-item-price-unit')}>đ</span>
                     </span>
                   </div>
                   <div className={cx('product-item-sale')}>
-                    <span className={cx('sale-percent')}>{product.sale.discount * 100}%</span>
+                    <span className={cx('sale-percent')}>{product.discount * 100}%</span>
                     <span className={cx('sale-label')}>GIẢM</span>
                   </div>
                 </>
