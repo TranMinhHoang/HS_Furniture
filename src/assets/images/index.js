@@ -3,6 +3,7 @@ import noCart from 'assets/images/cart/No_cart.png';
 import sliderTop from './sliderTop';
 import privacy from './privacy';
 import categoryTop from './categoryTop';
+import banner from './banner';
 
 const images = {
   logo,
@@ -10,6 +11,7 @@ const images = {
   sliderTop,
   privacy,
   categoryTop,
+  banner,
 };
 
 export default images;

@@ -71,3 +71,8 @@
 .btn.primary {
   background: var(--main-color);
 }
+
+.btn.primary.hover:hover {
+  color: var(--main-color);
+  background-color: #fff;
+}
