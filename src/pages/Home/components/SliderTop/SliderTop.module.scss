@@ -19,26 +19,11 @@
   height: 100%;
   object-fit: cover;
 }
-
-.nav-icon {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 1;
-  font-size: 5rem;
-  color: rgba(0, 100, 0, 0.2);
-  cursor: pointer;
-
-  &:hover {
-    color: var(--main-color);
-  }
-}
-
-.prev-icon {
+.prev-icon-slider {
   left: 1%;
 }
 
-.next-icon {
+.next-icon-slider {
   right: 1%;
 }
 

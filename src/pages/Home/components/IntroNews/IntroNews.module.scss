@@ -1,0 +1,83 @@
+.slider-item {
+  border: 1px solid var(--light-grey-color);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  cursor: default;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    right: 50%;
+    content: '';
+    height: 6px;
+    background-color: var(--sub-color);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: all ease-in-out 0.3s;
+  }
+
+  &:hover::after {
+    left: 0;
+    right: 0;
+  }
+
+  &:hover .date-box {
+    background-color: rgba(255, 159, 0, 0.8);
+  }
+}
+
+.date-box {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.6);
+  width: 68px;
+  height: 68px;
+  display: flex;
+  border-radius: 50%;
+  transition: all ease 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  font-weight: 700;
+  margin-bottom: 16px;
+  display: inline-block;
+  height: 4rem;
+  overflow: hidden;
+  transition: all ease 0.3s;
+
+  &:hover {
+    color: var(--sub-color);
+  }
+}
+
+.content {
+  font-size: 1.36rem;
+  font-weight: 400;
+  color: var(--light-color-text);
+  line-height: 1.6rem;
+  height: 6.6rem;
+  text-align: justify;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.btn {
+  margin-top: 20px;
+  font-size: 1.35rem;
+  color: var(--sub-color);
+  line-height: 2rem;
+  transition: all ease 0.3s;
+  font-weight: 500;
+
+  &:hover {
+    color: #000;
+  }
+}

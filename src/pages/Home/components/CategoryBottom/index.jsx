@@ -95,10 +95,10 @@ function CategoryBottom() {
                 </Link>
               </SwiperSlide>
             ))}
-            <div ref={prevRef} className={cx('nav-icon', 'prev-icon')}>
+            <div ref={prevRef} className={cx('nav-icon-slider', 'prev-icon-slider')}>
               <FontAwesomeIcon icon={faCaretLeft} />
             </div>
-            <div ref={nextRef} className={cx('nav-icon', 'next-icon')}>
+            <div ref={nextRef} className={cx('nav-icon-slider', 'next-icon-slider')}>
               <FontAwesomeIcon icon={faCaretRight} />
             </div>
           </Swiper>

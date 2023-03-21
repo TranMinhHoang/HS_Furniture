@@ -8,7 +8,7 @@ import ListProductSlider from '../../../../components/ListProduct/ListProductSil
 const cx = classNames.bind(styles);
 
 const navProduct = [
-  { name: 'Sản phẩm nổi bật', type: 'outStanding' },
+  { name: 'Sản phẩm nổi bật', type: 'outstanding' },
   { name: 'Sản phẩm mới', type: 'new' },
   { name: 'Sản phẩm được ưa thích', type: 'best seller' },
 ];

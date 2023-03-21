@@ -4,12 +4,18 @@ import styles from './Banner.module.scss';
 
 const cx = classNames.bind(styles);
 
-function Banner({ image }) {
+function Banner({ image, effectLine, to }) {
+  let Comp = 'div';
+
+  if (to) {
+    Comp = Link;
+  }
+
   return (
-    <Link to="/" className={cx('banner')}>
+    <Comp to={to} className={cx('banner')}>
       <img src={image} alt="" className="w-full" />
-      <div className={cx('effect-line')}></div>
-    </Link>
+      {effectLine && <div className={cx('effect-line')}></div>}
+    </Comp>
   );
 }
 

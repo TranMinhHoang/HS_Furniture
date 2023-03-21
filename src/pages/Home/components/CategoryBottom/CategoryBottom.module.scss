@@ -2,16 +2,6 @@
   position: relative;
 }
 
-.overlay {
-  position: absolute;
-  content: '';
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.4);
-}
-
 .slide {
   position: relative;
 
@@ -82,26 +72,4 @@
   text-transform: uppercase;
   padding-bottom: 6px;
   font-size: 1.8rem;
-}
-
-.nav-icon {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 1;
-  font-size: 5rem;
-  color: rgba(0, 100, 0, 0.2);
-  cursor: pointer;
-
-  &:hover {
-    color: var(--main-color);
-  }
-}
-
-.prev-icon {
-  left: 0;
-}
-
-.next-icon {
-  right: 0;
 }

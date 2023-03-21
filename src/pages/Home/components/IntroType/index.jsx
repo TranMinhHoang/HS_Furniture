@@ -1,10 +1,9 @@
 import classNames from 'classnames/bind';
-import ListProduct from 'components/ListProduct';
-import styles from './ProductType.module.scss';
+import styles from './IntroType.module.scss';
 
 const cx = classNames.bind(styles);
 
-function ProductType({ title, type }) {
+function IntroType({ children, title }) {
   return (
     <div className="py-[30px]">
       <div className="grid wide">
@@ -14,13 +13,11 @@ function ProductType({ title, type }) {
               {title}
             </a>
           </div>
-          <div className={cx('body', 'c-12')}>
-            <ListProduct type={type} />
-          </div>
+          <div className={cx('body', 'c-12')}>{children}</div>
         </div>
       </div>
     </div>
   );
 }
 
-export default ProductType;
+export default IntroType;
