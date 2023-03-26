@@ -2,17 +2,19 @@ import { faCaretRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import classNames from 'classnames/bind';
 import { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import styles from './HeaderNav.module.scss';
 import navigations from './navigations';
 
 const cx = classNames.bind(styles);
 
 function HeaderNav() {
-  const [activeLink, setActiveLink] = useState(window.location.pathname);
-  useEffect(() => {
-    setActiveLink(window.location.pathname);
-  }, [window.location.pathname]);
+  const location = useLocation();
+  const [activeLink, setActiveLink] = useState(location.pathname);
+  console.log(location);
+  // useEffect(() => {
+  //   setActiveLink(location.pathname);
+  // }, [location.pathname]);
 
   return (
     <div className={cx('header-nav')}>
@@ -20,7 +22,15 @@ function HeaderNav() {
         <nav className="p-l-r-20">
           <ul className={cx('nav-list')}>
             {navigations.map((item, index) => (
-              <li key={index} className={cx('nav-item', activeLink === item.path && 'nav-item-active')}>
+              <li
+                key={index}
+                className={cx(
+                  'nav-item',
+                  (location.pathname === item.path ||
+                    item.children?.some((child) => location.pathname === child.path)) &&
+                    'nav-item-active',
+                )}
+              >
                 <Link to={item.path} className={cx('nav-item-link')}>
                   {item.name}
                 </Link>

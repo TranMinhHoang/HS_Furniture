@@ -38,16 +38,6 @@ const navigations = [
   {
     name: 'Đồ trang trí',
     path: config.routes.decoration,
-    children: [
-      {
-        name: 'Giấy dán tường',
-        path: config.routes.chair,
-      },
-      {
-        name: 'Đèn',
-        path: config.routes.cabinet,
-      },
-    ],
   },
   {
     name: 'Tin tức',
